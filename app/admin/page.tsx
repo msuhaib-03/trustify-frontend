@@ -30,6 +30,7 @@ import {
   Cell,
 } from "recharts"
 import { adminAPI } from "@/lib/api"
+import { getExchangeRate } from "@/lib/currency"
 import { formatDistanceToNow } from "date-fns"
 
 interface ActivityItem {
@@ -192,7 +193,7 @@ export default function AdminDashboardPage() {
       title: "Monthly Revenue",
       value:
         stats.monthlyRevenue > 0
-          ? `Rs. ${(stats.monthlyRevenue / 100).toLocaleString(undefined, { minimumFractionDigits: 0, maximumFractionDigits: 0 })}`
+          ? `Rs. ${Math.round((stats.monthlyRevenue / 100) * getExchangeRate()).toLocaleString()}`
           : "Rs. 0",
       ...calculateChange(stats.monthlyRevenue, "monthlyRevenue"),
       icon: DollarSign,
