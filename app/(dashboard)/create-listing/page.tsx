@@ -347,11 +347,10 @@ export default function CreateListingPage() {
                       : "Selling Price *"}
                   </Label>
 
-                  {/* Converter row */}
+                  {/* Converter row — USD side and arrow hidden from user; PKR only visible */}
                   <div className="flex items-end gap-2">
-                    {/* PKR side */}
+                    {/* PKR side — only box the user sees */}
                     <div className="flex-1 space-y-1">
-                      <p className="text-xs font-medium text-muted-foreground">Enter in PKR (Rs.)</p>
                       <Input
                         type="number"
                         placeholder="e.g. 28,200"
@@ -361,13 +360,13 @@ export default function CreateListingPage() {
                       />
                     </div>
 
-                    {/* Bidirectional arrow */}
-                    <div className="pb-2">
+                    {/* Bidirectional arrow — hidden */}
+                    <div className="pb-2 hidden">
                       <ArrowLeftRight className="h-4 w-4 text-muted-foreground" />
                     </div>
 
-                    {/* USD side — this is what gets stored and sent to Stripe */}
-                    <div className="flex-1 space-y-1">
+                    {/* USD side — hidden from user, implementation kept intact */}
+                    <div className="flex-1 space-y-1 hidden">
                       <p className="text-xs font-medium text-muted-foreground">Stripe charges (USD $)</p>
                       <Input
                         id="price"
@@ -382,14 +381,16 @@ export default function CreateListingPage() {
                     </div>
                   </div>
 
-                  <p className="text-xs text-muted-foreground">
+                  {/* Converter explainer — hidden */}
+                  <p className="text-xs text-muted-foreground hidden">
                     Type in <strong>either box</strong> — they update each other automatically.
                     The platform shows buyers the PKR amount; Stripe charges USD
                     (1 USD = {RATE} PKR).
                   </p>
 
+                  {/* "This is what gets listed" summary — hidden */}
                   {formData.price && Number(formData.price) > 0 && (
-                    <div className="flex items-center gap-2 p-2 rounded-md bg-muted/50 text-xs">
+                    <div className="flex items-center gap-2 p-2 rounded-md bg-muted/50 text-xs hidden">
                       <span className="font-medium">{formatPkr(Number(formData.price) * RATE)}</span>
                       <span className="text-muted-foreground">=</span>
                       <span className="font-medium">${Number(formData.price).toFixed(2)} USD</span>

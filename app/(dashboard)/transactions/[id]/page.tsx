@@ -389,7 +389,7 @@ export default function TransactionDetailsPage() {
                         className="flex-1 gap-2 bg-gradient-to-r from-primary to-accent"
                       >
                         {actionLoading === "release" ? <Loader2 className="h-4 w-4 animate-spin" /> : <CheckCircle2 className="h-4 w-4" />}
-                        I Received the Item — Release Payment to Seller
+                        I Received the Item
                       </Button>
                       <Button variant="outline" className="flex-1 gap-2 bg-transparent" onClick={() => setDisputeOpen(true)}>
                         <Flag className="h-4 w-4" /> Open Dispute
