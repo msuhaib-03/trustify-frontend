@@ -462,7 +462,7 @@ export default function FraudDetectionPage() {
         <div className="min-w-0">
           <h1 className="text-xl sm:text-2xl md:text-3xl font-bold flex items-center gap-2">
             <Brain className="h-5 w-5 sm:h-6 sm:w-6 md:h-8 md:w-8 text-primary flex-shrink-0" />
-            <span className="truncate">AI Fraud Detection</span>
+            <span className="truncate">Fraud Detection</span>
           </h1>
           <p className="text-xs sm:text-sm text-muted-foreground">
             Monitor fraud scores, trust ratings, and suspicious activities
@@ -976,7 +976,7 @@ export default function FraudDetectionPage() {
               <CardHeader className="p-4 sm:p-6">
                 <CardTitle className="text-base sm:text-lg">Analyze Transaction</CardTitle>
                 <CardDescription className="text-xs sm:text-sm">
-                  Run AI fraud detection on a transaction
+                  Run fraud score analysis on a transaction
                 </CardDescription>
               </CardHeader>
               <CardContent className="p-4 sm:p-6 pt-0 space-y-4">

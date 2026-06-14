@@ -19,8 +19,8 @@ export function Footer() {
               </span>
             </Link>
             <p className="text-sm text-muted-foreground leading-relaxed">
-              A safe, AI-powered online marketplace for renting, buying, and selling in local communities with user
-              verification and secure payments.
+              A safe, secure online marketplace for renting, buying, and selling in local communities with user
+              verification and escrow payments.
             </p>
             <div className="flex gap-4">
               <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
@@ -110,15 +110,15 @@ export function Footer() {
             <ul className="space-y-3">
               <li className="flex items-center gap-3 text-sm text-muted-foreground">
                 <Mail className="h-4 w-4 text-primary" />
-                <span>support@trustify.pk</span>
+                <span>fa22bscs0114@maju.edu.pk</span>
               </li>
               <li className="flex items-center gap-3 text-sm text-muted-foreground">
                 <Phone className="h-4 w-4 text-primary" />
-                <span>+92 300 1234567</span>
+                <span>+92 345 3933500</span>
               </li>
               <li className="flex items-start gap-3 text-sm text-muted-foreground">
                 <MapPin className="h-4 w-4 text-primary flex-shrink-0 mt-0.5" />
-                <span>Lahore, Pakistan</span>
+                <span>Karachi, Pakistan</span>
               </li>
             </ul>
           </div>

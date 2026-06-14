@@ -50,8 +50,8 @@ const features = [
   },
   {
     icon: Brain,
-    title: "AI Fraud Detection",
-    description: "Advanced AI/ML algorithms continuously monitor and flag suspicious activities.",
+    title: "Fraud Detection",
+    description: "Fraud scores and trust ratings continuously monitor and flag suspicious activities.",
   },
   {
     icon: CreditCard,
@@ -281,7 +281,7 @@ export default function LandingPage() {
               transition={{ duration: 0.5, delay: 0.2 }}
               className="mx-auto max-w-2xl text-sm sm:text-base md:text-lg lg:text-xl text-muted-foreground leading-relaxed px-2"
             >
-              Experience the future of peer-to-peer commerce in Pakistan with AI-powered fraud detection, verified
+              Experience the future of peer-to-peer commerce in Pakistan with fraud detection, verified
               users, secure escrow payments, and real-time communication.
             </motion.p>
 
@@ -370,7 +370,7 @@ export default function LandingPage() {
             >
               Trustify solves this by establishing a trustworthy online marketplace with user verification, payment
               security, and open communication as fundamental standards. Through comprehensive verification including
-              CNIC validation, live photo matching, and AI-based fraud detection, we enable secure peer-to-peer
+              CNIC validation, live photo matching, and fraud score monitoring, we enable secure peer-to-peer
               transactions in local communities.
             </motion.p>
           </AnimatedSection>
@@ -476,7 +476,7 @@ export default function LandingPage() {
               <motion.ul variants={staggerContainer} className="space-y-3 sm:space-y-4">
                 {[
                   "End-to-end encrypted communications",
-                  "AI-powered fraud detection system",
+                  "Fraud score & trust rating system",
                   "Escrow-based payment protection",
                   "Identity verification with CNIC",
                   "24/7 dispute resolution support",

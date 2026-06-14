@@ -268,7 +268,7 @@ export default function LoginPage() {
           </div>
           <h2 className="text-2xl font-bold text-foreground">Secure Marketplace</h2>
           <p className="text-muted-foreground max-w-md">
-            Join thousands of verified users trading safely on Trustify with our AI-powered fraud detection.
+            Join thousands of verified users trading safely on Trustify with fraud scores, trust ratings, and secure escrow payments.
           </p>
         </motion.div>
       </div>
